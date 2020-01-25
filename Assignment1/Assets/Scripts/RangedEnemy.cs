@@ -17,6 +17,9 @@ namespace assignment1
 {
     public class RangedEnemy : Enemy, IHasArmor, IPoolerObject
     {
+
+    protected int health;
+    
      public override void TakeDamage()
     {
         Debug.Log("Ranged Enemy takes more damage than a standard melee enemy.");

@@ -17,6 +17,8 @@ namespace assignment1
 {
 public class MeleeEnemy : Enemy, IHasArmor, IPoolerObject
 {
+    protected int health;
+    
     public override void TakeDamage()
     {
         Debug.Log("Melee Enemy is more Tanky and takes less damage");
