@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface INodeBehaviour 
 {
-    void attack();
+    void attack(GameObject nodeObject);
 }

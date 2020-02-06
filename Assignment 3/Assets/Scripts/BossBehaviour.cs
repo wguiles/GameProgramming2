@@ -9,22 +9,36 @@ public class BossBehaviour : MonoBehaviour, IBossNode
     public float xLimitLeft;
     public float xLimitRight;
 
-    private float direction = 1f;
+    public float yLimitTop;
+    public float yLimitBottom;
+
+    private Vector2 direction = new Vector2 (1f, 0f);
 
     
     void Update()
     {
-        transform.Translate(new Vector2(1f, 0) * moveSpeed * Time.deltaTime * direction);
+        transform.Translate(moveSpeed * Time.deltaTime * direction);
 
-        if (direction == 1 && transform.position.x >= xLimitRight) 
+        if (direction.x >= 1 && transform.position.x >= xLimitRight) 
         {
-            ChangeDirection();
+            ChangeXDirection();
             transform.position = new Vector3(xLimitRight, transform.position.y);
         }
-        else if (direction == -1 && transform.position.x <= xLimitLeft)
+        else if (direction.x <= -1 && transform.position.x <= xLimitLeft)
         {
-            ChangeDirection();
+            ChangeXDirection();
             transform.position = new Vector3(xLimitLeft, transform.position.y);
+        }
+
+        if (direction.y >= 1 && transform.position.y >= yLimitTop)
+        {
+            ChangeYDirection();
+            transform.position = new Vector3(transform.position.x, yLimitTop);
+        }
+        else if (direction.y <= -1f && transform.position.y <= yLimitBottom)
+        {
+            ChangeYDirection();
+            transform.position = new Vector3(transform.position.x, yLimitBottom);
         }
     }
 
@@ -35,11 +49,23 @@ public class BossBehaviour : MonoBehaviour, IBossNode
 
     public void updateBehaviour(int healthRemaining)
     {
-        //change movement of the main node based off of movement
+        if (healthRemaining <= 50 && healthRemaining > 30)
+        {
+            moveSpeed = 5f;
+        }
+        else if (healthRemaining <= 30 && direction.y == 0f)
+        {
+            direction = new Vector2(direction.x, 1);
+        }
     }
 
-    private void ChangeDirection()
+    private void ChangeXDirection()
     {
-        direction *= -1f;
+        direction *= new Vector2(-1f, 1f);
+    }
+
+    private void ChangeYDirection()
+    {
+        direction *= new Vector2(1f, -1f);
     }
 }
