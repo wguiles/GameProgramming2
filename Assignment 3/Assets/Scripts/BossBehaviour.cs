@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class BossBehaviour : MonoBehaviour, IBossNode
 {
+    /*
+	 * Warren Guiles
+	 * BossBehaviour.cs
+	 * Assignment 3
+	 * This is one of the observer classes that recieves information from 
+     the subject. This script receives the health from the Subject,
+     and changes the boss's behaviour based on how much the boss has been damaged,
+     mainly dealing with movement speed and direction
+
+	 */
     public float moveSpeed;
 
     public float xLimitLeft;

@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour, INodeBehaviour
 {
+        /*
+	 * Warren Guiles
+	 * Shoot.cs
+	 * Assignment 3
+	 * This is one of the behaviours that are used by the BossNodes to dictate actions/attacks.
+       This one specifically shoots a bullet outwards every 0.75 seconds.
+	 */
 
     private float currentTimer;
 

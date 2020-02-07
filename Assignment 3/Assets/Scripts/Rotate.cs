@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class Rotate : MonoBehaviour
 {
+        /*
+	 * Warren Guiles
+	 * Rotate.cs
+	 * Assignment 3
+	 * A simple script for rotating objects. I use this 
+     to make the boss nodes rotate around the boss.
+
+	 */
     public float rotateSpeed;
 
     // Update is called once per frame

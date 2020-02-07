@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class BossNode : MonoBehaviour, IBossNode
 {
+        /*
+	 * Warren Guiles
+	 * BossNode.cs
+	 * Assignment 3
+	 * This is one of the observer classes that recieves information from 
+     the subject. This script receives the health from the Subject,
+     and changes the INodeBehavior variable in order for the
+     node (the smaller spheres around the bigger one) to behave differently,
+     whether the node is doing nothing, shooting, or bobbing up and down.
+     This script also handles collision and health for the node.
+
+	 */
     public int nodeHealth;
     private INodeBehaviour behaviour;
 

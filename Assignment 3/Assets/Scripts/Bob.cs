@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class Bob : INodeBehaviour
 {
+    /*
+	 * Warren Guiles
+	 * Bob.cs
+	 * Assignment 3
+	 * This is one of the behaviours that are used by the BossNodes to dictate actions/attacks.
+       This one specifically has the nodes moving away from and towards the boss in an attempt to hit the player.
+	 */
+
     private Vector2 directionToTravel;
 
     private float direction = 1f;

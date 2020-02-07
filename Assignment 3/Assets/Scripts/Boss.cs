@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour, IBoss
 {
+
+     /*
+	 * Warren Guiles
+	 * Boss.cs
+	 * Assignment 3
+	 * This is the main subject class. It regesters/removes nodes,
+        and sends information to nodes in the form of how much health
+        the boss has left. This script also handles boss collision and
+        the win state.
+	 */
+
+    
     public int bossHealth;
 
     public List<IBossNode> bossNodeList = new List<IBossNode>();

@@ -5,6 +5,14 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+        /*
+	 * Warren Guiles
+	 * PlayerController.cs
+	 * Assignment 3
+	 * This is the script that lets the player move and shoot. It also 
+     handles collision, playerHealth, and the loss state.
+
+	 */
 
     public float speed;
 
