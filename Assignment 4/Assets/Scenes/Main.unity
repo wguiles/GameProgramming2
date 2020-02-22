@@ -3880,7 +3880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -41.165, y: 0}
+  m_AnchoredPosition: {x: -41.165, y: 13.1}
   m_SizeDelta: {x: 72.2, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &827581633
@@ -7416,6 +7416,8 @@ GameObject:
   - component: {fileID: 1639090681}
   - component: {fileID: 1639090683}
   - component: {fileID: 1639090682}
+  - component: {fileID: 1639090685}
+  - component: {fileID: 1639090684}
   m_Layer: 5
   m_Name: SpeedPanel
   m_TagString: Untagged
@@ -7480,6 +7482,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639090680}
   m_CullTransparentMesh: 0
+--- !u!114 &1639090684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639090680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 2.16, y: -0.53}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1639090685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639090680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 4.92, y: 5.66}
+  m_UseGraphicAlpha: 0
 --- !u!1 &1643919893
 GameObject:
   m_ObjectHideFlags: 0
