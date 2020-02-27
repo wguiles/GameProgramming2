@@ -72,6 +72,32 @@
      <Compile Include="Assets\Scripts\Week 5, 4. Simple Factory Pattern - Separate GameObjects and Scripts\Vampire.cs" />
      <Compile Include="Assets\Scripts\Week 5, 4. Simple Factory Pattern - Separate GameObjects and Scripts\Werewolf.cs" />
      <Compile Include="Assets\Scripts\Week 5, 4. Simple Factory Pattern - Separate GameObjects and Scripts\Zombie.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 1. Factory Method Pattern - Console\AllyCreator.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 1. Factory Method Pattern - Console\AllyVampire.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 1. Factory Method Pattern - Console\AllyWerewolf.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 1. Factory Method Pattern - Console\AllyZombie.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 1. Factory Method Pattern - Console\EnemyCreator.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 1. Factory Method Pattern - Console\EnemyVampire.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 1. Factory Method Pattern - Console\EnemyWerewolf.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 1. Factory Method Pattern - Console\EnemyZombie.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 1. Factory Method Pattern - Console\Health.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 1. Factory Method Pattern - Console\NPC.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 1. Factory Method Pattern - Console\NPCCreator.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 1. Factory Method Pattern - Console\NPCSimulator.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\AllyCreator.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\AllyVampire.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\AllyWerewolf.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\AllyZombie.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\DisplayHealth.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\DisplaySpawnerSetting.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\EnemyCreator.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\EnemyVampire.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\EnemyWerewolf.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\EnemyZombie.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\Health.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\NPC.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\NPCCreator.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\NPCSpawner.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/wguiles/Documents/Spring 2020/Game Programming 2/Repo/GameProgramming2/FactoryPatternPractice/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
