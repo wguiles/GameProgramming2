@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/SampleScene.unity
+- path: Assets/Scenes/5.4. Simple Factory Pattern with Separate GameObjects and Scripts.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
