@@ -70,8 +70,8 @@ public class SmallPlayer : GameCharacter
 
     public override void ActivateAbility()
     {
-        transform.localScale /= 2;
-        JumpHeight += 2f;
+        transform.localScale = new Vector2(0.5f, 0.5f);
+        JumpHeight = 12f;
     }
 
     private void OnCollisionEnter2D(Collision2D other) 
@@ -91,7 +91,7 @@ public class SmallPlayer : GameCharacter
             Door doorEntered = other.gameObject.GetComponent<Door>();
 
             SpawnManager.instance.SetType(doorEntered.type);
-            
+
             EnterDoor();
         }
     }

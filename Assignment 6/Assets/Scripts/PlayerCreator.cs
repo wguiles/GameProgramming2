@@ -15,6 +15,9 @@ public class PlayerCreator : GameCharacterFactory
         else if (type == "SmallPlayer")
             objToReturn = Resources.Load<GameObject>("SmallPlayer");
 
+
+            objToReturn.GetComponent<GameCharacter>().ActivateAbility();
+
             return objToReturn;
     }
 }

@@ -25,12 +25,14 @@ public class SpawnManager : MonoBehaviour
 
     public static SpawnManager instance;
 
-    public doors.doorType type = doors.doorType.normal;
+    public Door.doorType type = Door.doorType.normal;
 
     private void Awake() 
     {
         if (instance == null)
+        {
             instance = this;
+        }
     }
 
      private void Start() 
@@ -44,7 +46,7 @@ public class SpawnManager : MonoBehaviour
         Populate();
     }
 
-    public void SetType(doors.doorType newType)
+    public void SetType (Door.doorType newType)
     {
         type = newType;
     }
@@ -53,15 +55,15 @@ public class SpawnManager : MonoBehaviour
     {
         GameObject newPlayer = null;
 
-        if (type == doors.doorType.normal)
+        if (type == Door.doorType.normal)
         {
             newPlayer = Instantiate(playerCreator.SpawnGameCharacter("NormalPlayer"), new Vector2(0f, -1f), Quaternion.identity);
         }
-        else if (type == doors.doorType.fast)
+        else if (type == Door.doorType.fast)
         {
             newPlayer = Instantiate(playerCreator.SpawnGameCharacter("FastPlayer"), new Vector2(0f, -1f), Quaternion.identity);
         }
-        else if (type == doors.doorType.small)
+        else if (type == Door.doorType.small)
         {
             newPlayer = Instantiate(playerCreator.SpawnGameCharacter("SmallPlayer"), new Vector2(0f, -1f), Quaternion.identity);
         }

@@ -73,7 +73,7 @@ public class FastPlayer : GameCharacter
 
     public override void ActivateAbility()
     {
-        speed *= 2f;
+        speed = 10f;
     }
 
     private void OnCollisionEnter2D(Collision2D other) 
@@ -92,6 +92,7 @@ public class FastPlayer : GameCharacter
             Door doorEntered = other.gameObject.GetComponent<Door>();
 
             SpawnManager.instance.SetType(doorEntered.type);
+
             EnterDoor();
         }
     }
