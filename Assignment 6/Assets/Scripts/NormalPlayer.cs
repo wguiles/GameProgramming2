@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class NormalPlayer : GameCharacter
 {
+
+         /*
+	 * Warren Guiles
+	 * NormalPlayer.cs
+	 * Assignment 6 
+	 * This is a variation of the player that gets spawned 
+     by the factory. This version is the standard player
+*/
     public float speed;
     public float JumpHeight;
 

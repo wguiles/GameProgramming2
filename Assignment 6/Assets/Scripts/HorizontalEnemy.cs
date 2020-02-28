@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+	 * Warren Guiles
+	 * HorizontalEnemy.cs
+	 * Assignment 6 
+	 * This is a variation of the enemy that gets spawned 
+     by the factory. This version moves back and forth horizontally
+*/
+
+
 public class HorizontalEnemy : GameCharacter
 {
     public float speed;

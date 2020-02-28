@@ -5,6 +5,14 @@ using UnityEngine;
 public class FastPlayer : GameCharacter
 {
 
+     /*
+	 * Warren Guiles
+	 * FastPlayer.cs
+	 * Assignment 6 
+	 * This is a variation of the player that gets spawned 
+     by the factory. This version is faster than the normal player
+*/
+
     public float speed;
     public float JumpHeight;
 

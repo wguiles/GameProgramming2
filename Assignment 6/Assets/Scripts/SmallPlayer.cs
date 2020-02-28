@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class SmallPlayer : GameCharacter
 {
+
+ /*
+	 * Warren Guiles
+	 * SmallPlayer.cs
+	 * Assignment 6 
+	 * This is a variation of the player that gets spawned 
+     by the factory. This version is faster than the normal player
+*/
     public float speed;
     public float JumpHeight;
 

@@ -6,6 +6,15 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+
+/*
+	 * Warren Guiles
+	 * GameManager.cs
+	 * Assignment 6 
+     * This is main driver class that keeps track of 
+     score and time remaining. It also displays the information
+     online 
+*/
     public static GameManager instance;
 
     public TextMeshProUGUI timeRemainingText;

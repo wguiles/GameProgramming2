@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class VerticalEnemy : GameCharacter
 {
+
+         /*
+	 * Warren Guiles
+	 * VerticalEnemy.cs
+	 * Assignment 6 
+	 * This is a variation of the enemy that gets spawned 
+     by the factory. This version moves back and forth vertically
+*/
         public float speed;
     private float direction = 1f;
 

@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+         /*
+	 * Warren Guiles
+	 * SpawnManager.cs
+	 * Assignment 6 
+	 * This is the script that calls the factory methods and 
+     randomly populates the screen with enemies and doors randomly
+*/
 
     private EnemyCreator enemyCreator;
 

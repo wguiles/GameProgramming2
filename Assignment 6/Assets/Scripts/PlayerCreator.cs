@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class PlayerCreator : GameCharacterFactory
 {
+
+         /*
+	 * Warren Guiles
+	 * PlayerCreator.cs
+	 * Assignment 6 
+	 * This is one of the concrete classes that inherits from the 
+     Game Character factory. This one specifically spawns different
+    variations of the player
+*/
     public override GameObject SpawnGameCharacter(string type)
     {
         GameObject objToReturn = null;
