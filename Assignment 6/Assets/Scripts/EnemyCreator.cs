@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyCreator : MonoBehaviour
+public class EnemyCreator : GameCharacterFactory
 {
-    // Start is called before the first frame update
-    void Start()
+    public override GameObject SpawnGameCharacter(string type)
     {
-        
-    }
+        GameObject objToReturn = null;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (type == "HorizontalEnemy")
+            objToReturn = Resources.Load<GameObject>("HorizontalEnemy");
+        else if (type == "VerticalEnemy")
+            objToReturn = Resources.Load<GameObject>("VerticalEnemy");
+
+            return objToReturn;
     }
 }

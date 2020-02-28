@@ -53,7 +53,9 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\HorizontalEnemy.cs" />
      <Compile Include="Assets\Scripts\NormalPlayer.cs" />
+     <Compile Include="Assets\Scripts\PlayerCreator.cs" />
      <Compile Include="Assets\Scripts\SmallPlayer.cs" />
+     <Compile Include="Assets\Scripts\SpawnManager.cs" />
      <Compile Include="Assets\Scripts\VerticalEnemy.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/wguiles/Documents/Spring 2020/Game Programming 2/Repo/GameProgramming2/Assignment 6/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

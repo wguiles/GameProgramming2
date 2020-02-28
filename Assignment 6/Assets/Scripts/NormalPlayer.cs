@@ -24,6 +24,11 @@ public class NormalPlayer : GameCharacter
         {
             Jump();
         }
+
+        if (transform.position.y <= -7f)
+        {
+            GameManager.instance.PlayerFailedToEnterDoor();
+        }
     }
 
     private void FixedUpdate() 
@@ -48,6 +53,7 @@ public class NormalPlayer : GameCharacter
     public void EnterDoor()
     {
         //update game score or something
+        GameManager.instance.doorEntered();
         //kill this player... sorry bud
         Die();
     }
@@ -71,7 +77,8 @@ public class NormalPlayer : GameCharacter
     {
         if (other.gameObject.tag == "Enemy")
         {
-            //update game score to be less.
+            GameManager.instance.PlayerFailedToEnterDoor();
+            
             Die();
         }    
     }
@@ -80,6 +87,9 @@ public class NormalPlayer : GameCharacter
     {
         if (other.gameObject.tag == "Door" && Input.GetKeyDown(KeyCode.W))
         {
+            Door doorEntered = other.gameObject.GetComponent<Door>();
+
+            SpawnManager.instance.SetType(doorEntered.type);
             EnterDoor();
         }
     }

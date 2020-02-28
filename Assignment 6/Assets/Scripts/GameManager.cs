@@ -6,10 +6,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public GameObject[] enemySpawns;
-
-    public GameObject[] doorSpawns;
-
     private void Awake() 
     {
         if (instance == null)
@@ -20,18 +16,8 @@ public class GameManager : MonoBehaviour
 
      private void Start() 
     {
-        enemySpawns = GameObject.FindGameObjectsWithTag("EnemySpawn");
-        doorSpawns  = GameObject.FindGameObjectsWithTag("Door");
+
     }
-
-    public void Populate()
-    {
-        //spawn a few random enemies
-        int enemiesSpawned = 0;
-
-        
-    }
-
 
     public int timeRemaining;
 
@@ -40,6 +26,22 @@ public class GameManager : MonoBehaviour
     public void doorEntered()
     {
         doorsRemaining--;
+
+        if (doorsRemaining <= 0)
+        {
+            EndGame();
+        }
+
+        SpawnManager.instance.ClearAll();
+        SpawnManager.instance.Populate();
+    }
+
+    public void PlayerFailedToEnterDoor()
+    {
+        doorsRemaining++;
+
+        SpawnManager.instance.ClearAll();
+        SpawnManager.instance.Populate();
     }
 
     public void EndGame()

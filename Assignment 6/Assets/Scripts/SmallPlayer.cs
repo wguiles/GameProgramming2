@@ -24,6 +24,11 @@ public class SmallPlayer : GameCharacter
         {
             Jump();
         }
+
+        if (transform.position.y <= -7.0f)
+        {
+            GameManager.instance.PlayerFailedToEnterDoor();
+        }
     }
 
     private void FixedUpdate() 
@@ -48,6 +53,7 @@ public class SmallPlayer : GameCharacter
     public void EnterDoor()
     {
         //update game score or something
+        GameManager.instance.doorEntered();
         //kill this player... sorry bud
         Die();
     }
@@ -73,6 +79,7 @@ public class SmallPlayer : GameCharacter
         if (other.gameObject.tag == "Enemy")
         {
             //update game score to be less.
+            GameManager.instance.PlayerFailedToEnterDoor();
             Die();
         }    
     }
@@ -81,6 +88,10 @@ public class SmallPlayer : GameCharacter
     {
         if (other.gameObject.tag == "Door" && Input.GetKeyDown(KeyCode.W))
         {
+            Door doorEntered = other.gameObject.GetComponent<Door>();
+
+            SpawnManager.instance.SetType(doorEntered.type);
+            
             EnterDoor();
         }
     }
