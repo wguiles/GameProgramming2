@@ -49,6 +49,7 @@ public class NormalPlayer : GameCharacter
     {
         //update game score or something
         //kill this player... sorry bud
+        Die();
     }
 
     public override void Die()
@@ -73,6 +74,14 @@ public class NormalPlayer : GameCharacter
             //update game score to be less.
             Die();
         }    
+    }
+
+    private void OnTriggerStay2D(Collider2D other) 
+    {
+        if (other.gameObject.tag == "Door" && Input.GetKeyDown(KeyCode.W))
+        {
+            EnterDoor();
+        }
     }
 
 

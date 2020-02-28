@@ -4,15 +4,46 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static GameManager instance;
+
+    public GameObject[] enemySpawns;
+
+    public GameObject[] doorSpawns;
+
+    private void Awake() 
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
+     private void Start() 
+    {
+        enemySpawns = GameObject.FindGameObjectsWithTag("EnemySpawn");
+        doorSpawns  = GameObject.FindGameObjectsWithTag("Door");
+    }
+
+    public void Populate()
+    {
+        //spawn a few random enemies
+        int enemiesSpawned = 0;
+
         
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public int timeRemaining;
+
+    public int doorsRemaining;
+
+    public void doorEntered()
     {
-        
+        doorsRemaining--;
+    }
+
+    public void EndGame()
+    {
+
     }
 }

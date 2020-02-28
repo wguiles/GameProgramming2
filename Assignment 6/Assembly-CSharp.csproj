@@ -45,6 +45,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Door.cs" />
+     <Compile Include="Assets\Scripts\EnemyCreator.cs" />
      <Compile Include="Assets\Scripts\FastPlayer.cs" />
      <Compile Include="Assets\Scripts\GameCharacter.cs" />
      <Compile Include="Assets\Scripts\GameCharacterFactory.cs" />
