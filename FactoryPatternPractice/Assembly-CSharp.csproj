@@ -95,6 +95,7 @@
      <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\EnemyWerewolf.cs" />
      <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\EnemyZombie.cs" />
      <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\Health.cs" />
+     <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\NPC.cs" />
      <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\NPCCreator.cs" />
      <Compile Include="Assets\Scripts\Week 6, 2. Factory Method Pattern - GameObjects\NPCSpawner.cs" />
