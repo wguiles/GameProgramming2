@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI timeRemainingText;
     public TextMeshProUGUI doorsRemainingText;
 
+    public GameObject winPanel;
+    public GameObject losePanel;
+
     private void Awake() 
     {
         if (instance == null)
@@ -72,11 +75,11 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
-
+        winPanel.SetActive(true);
     }
 
     public void LoseGame()
     {
-
+        losePanel.SetActive(true);
     }
 }

@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\HorizontalEnemy.cs" />
      <Compile Include="Assets\Scripts\NormalPlayer.cs" />
      <Compile Include="Assets\Scripts\PlayerCreator.cs" />
+     <Compile Include="Assets\Scripts\SceneLoading.cs" />
      <Compile Include="Assets\Scripts\SmallPlayer.cs" />
      <Compile Include="Assets\Scripts\SpawnManager.cs" />
      <Compile Include="Assets\Scripts\VerticalEnemy.cs" />
