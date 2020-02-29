@@ -9,8 +9,8 @@ public abstract class GameCharacter : MonoBehaviour
 	 * Warren Guiles
 	 * GameCharacter.cs
 	 * Assignment 6 
-     * This is the abstract class that all things that spawn from the 
-     factory inherit from. 
+     * This is the abstract class for the things that get 
+     spawned from the factory
 */
     public abstract void SetPosition(Vector2 newPos);
 
