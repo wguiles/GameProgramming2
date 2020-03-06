@@ -45,7 +45,18 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\CameraFollow.cs" />
+     <Compile Include="Assets\Command.cs" />
+     <Compile Include="Assets\CommandManager.cs" />
+     <Compile Include="Assets\CommandRegistry.cs" />
+     <Compile Include="Assets\EnemyPopsIntoBackground.cs" />
+     <Compile Include="Assets\ISavableObject.cs" />
+     <Compile Include="Assets\MoveLeftAndRight.cs" />
+     <Compile Include="Assets\MoveUpAndDown.cs" />
      <Compile Include="Assets\PlayerBehaviour.cs" />
+     <Compile Include="Assets\PopIntoBackgroundCommand.cs" />
+     <Compile Include="Assets\SavableObject.cs" />
+     <Compile Include="Assets\SaveStateCommand.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/wguiles/Documents/Spring 2020/Game Programming 2/Repo/GameProgramming2/Assignment7/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
