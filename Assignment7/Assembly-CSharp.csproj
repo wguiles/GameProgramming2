@@ -45,19 +45,20 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\CameraFollow.cs" />
-     <Compile Include="Assets\Command.cs" />
-     <Compile Include="Assets\CommandManager.cs" />
-     <Compile Include="Assets\CommandRegistry.cs" />
-     <Compile Include="Assets\EnemyPopsIntoBackground.cs" />
-     <Compile Include="Assets\ISavableObject.cs" />
-     <Compile Include="Assets\MoveLeftAndRight.cs" />
-     <Compile Include="Assets\MoveUpAndDown.cs" />
-     <Compile Include="Assets\PlayerBehaviour.cs" />
-     <Compile Include="Assets\PopIntoBackgroundCommand.cs" />
-     <Compile Include="Assets\SavableObject.cs" />
-     <Compile Include="Assets\SaveStateCommand.cs" />
-     <Compile Include="Assets\UIManager.cs" />
+     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Command.cs" />
+     <Compile Include="Assets\Scripts\CommandManager.cs" />
+     <Compile Include="Assets\Scripts\CommandRegistry.cs" />
+     <Compile Include="Assets\Scripts\EnemyPopsIntoBackground.cs" />
+     <Compile Include="Assets\Scripts\ISavableObject.cs" />
+     <Compile Include="Assets\Scripts\MoveLeftAndRight.cs" />
+     <Compile Include="Assets\Scripts\MoveUpAndDown.cs" />
+     <Compile Include="Assets\Scripts\PlayerBehaviour.cs" />
+     <Compile Include="Assets\Scripts\PopIntoBackgroundCommand.cs" />
+     <Compile Include="Assets\Scripts\SavableObject.cs" />
+     <Compile Include="Assets\Scripts\SaveStateCommand.cs" />
+     <Compile Include="Assets\Scripts\UIManager.cs" />
+     <Compile Include="Assets\Scripts\WinDetection.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

@@ -44,7 +44,7 @@ public class UIManager : MonoBehaviour
 
     public void ActivateWinPanel()
     {
-        
+        winPanel.SetActive(true);
     }
 
 
