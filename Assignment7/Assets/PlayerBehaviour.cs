@@ -8,8 +8,12 @@ public class PlayerBehaviour : MonoBehaviour, ISavableObject
     public float jumpHeight;
     public float moveSpeed;
 
+    public GameObject loseScreen;
+
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2.0f;
+
+    private bool canJump = false;
 
     private Vector2 startingPosition;
 
@@ -22,28 +26,36 @@ public class PlayerBehaviour : MonoBehaviour, ISavableObject
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.K))
         {
             CommandManager.instance.UndoCommand("PlayerBackground");
         }
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            Jump();
+            if (canJump)
+            {
+                Jump();
+            }
         }
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.J))
         {
              CommandManager.instance.ExecuteCommand("PlayerBackground");
         }
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Y))
         {
             CommandManager.instance.ExecuteCommand("SaveStateDriver");
         }
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.U))
         {
             CommandManager.instance.UndoCommand("SaveStateDriver");
         }
 
         transform.Translate(new Vector2(moveSpeed * Time.deltaTime * Input.GetAxis("Horizontal"), 0f));
+
+        if (transform.position.y <= -85.0f)
+        {
+            LoseGame();
+        }
     }
     private void FixedUpdate() 
     {
@@ -61,6 +73,7 @@ public class PlayerBehaviour : MonoBehaviour, ISavableObject
 
     public void Jump()
     {
+        canJump = false;
         rb.AddForce(new Vector2(0f, jumpHeight), ForceMode2D.Impulse);
     }
     
@@ -88,12 +101,21 @@ public class PlayerBehaviour : MonoBehaviour, ISavableObject
     {
         if (other.gameObject.tag == "Enemy")
         {
-            ResetPlayerPosition();
+            LoseGame();
+        }
+        else if (other.gameObject.tag == "Floor")
+        {
+            canJump = true;
         }
     }
 
     private void ResetPlayerPosition()
     {
         transform.position = startingPosition;
+    }
+
+    public void LoseGame()
+    {
+        loseScreen.SetActive(true);
     }
 }

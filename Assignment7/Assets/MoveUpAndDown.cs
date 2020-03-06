@@ -13,16 +13,16 @@ public class MoveUpAndDown : MonoBehaviour, ISavableObject
 
     public void Move()
     {
-        transform.Translate(new Vector2(speed * Time.deltaTime * direction, 0f));
+        transform.Translate(new Vector2(0f, speed * Time.deltaTime * direction));
 
-        if (transform.position.x > yLimitTop)
+        if (transform.position.y > yLimitTop)
         {
-            transform.position = new Vector2(yLimitTop, transform.position.y);
+            transform.position = new Vector2(transform.position.x, yLimitTop);
             ChangeDirection();
         }
-        else if (transform.position.x < yLimitBottom)
+        else if (transform.position.y < yLimitBottom)
         {
-            transform.position = new Vector2(yLimitBottom, transform.position.y);
+            transform.position = new Vector2(transform.position.x, yLimitBottom);
             ChangeDirection();            
         }
     }

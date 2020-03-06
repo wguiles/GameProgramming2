@@ -10,7 +10,7 @@ public class SaveStateCommand : Command
 
     public void execute()
     {
-        Debug.Log("Executed");
+        UIManager.instance.ShowSaveStateMessage("State Saved");
         List<SavableObject> newList = new List<SavableObject>();
 
         foreach (MonoBehaviour m in UnityEngine.Object.FindObjectsOfType<MonoBehaviour>())
@@ -38,7 +38,11 @@ public class SaveStateCommand : Command
         Debug.Log("Undid");
 
         if (savables.Count == 0)
+        {
+            UIManager.instance.ShowSaveStateMessage("No Saves Left");
             return;
+        }
+            
         
         List<SavableObject> oldStates = savables.Pop();
 
@@ -48,5 +52,8 @@ public class SaveStateCommand : Command
             obj.savedObject.layer = obj.savedLayer;
             obj.savedObject.GetComponent<SpriteRenderer>().color = obj.savedSpriteColor;
         }
+
+        UIManager.instance.ShowSaveStateMessage("State Loaded");
+        UIManager.instance.DeactivateLosePanel();
     }
 }

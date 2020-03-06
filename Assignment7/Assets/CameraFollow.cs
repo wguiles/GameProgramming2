@@ -9,11 +9,31 @@ public class CameraFollow : MonoBehaviour, ISavableObject
     public float smoothSpeed = 0.125f;
     public Vector3 offset;
 
+    private bool RoundStarted = false;
+
+    private void Start() 
+    {
+        StartCoroutine(waitToSlide());
+    }
+
     private void LateUpdate() 
     {
-        Vector3 desiredPosition = target.position + offset;
-        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-        transform.position = new Vector3(smoothedPosition.x, transform.position.y, smoothedPosition.z);
+        if (RoundStarted)
+        {
+            Vector3 desiredPosition = target.position + offset;
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+            transform.position = new Vector3(smoothedPosition.x, transform.position.y, smoothedPosition.z);
+        }
+    }
+
+    private IEnumerator waitToSlide()
+    {
+        smoothSpeed = 0.005f;
+        yield return new WaitForSeconds(5f);
+        RoundStarted = true;
+
+        yield return new WaitForSeconds(3f);
+        smoothSpeed = 0.1f;
     }
 
     public  Transform GetTransform()
