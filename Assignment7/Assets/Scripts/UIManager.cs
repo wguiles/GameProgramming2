@@ -4,6 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/*
+    * Warren Guiles
+    * PlayerBehaviour.cs
+    * Assignment7
+    * This script handles the win and lose panel for the game, while
+    also displaying text for save states.
+*/
+
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;

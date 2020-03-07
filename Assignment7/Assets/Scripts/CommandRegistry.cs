@@ -2,10 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    * Warren Guiles
+    * CommandRegistry.cs
+    * Assignment7.
+    * This is the script that creates all of the commands in the game
+    and assigns their receivers.
+*/
 public class CommandRegistry : MonoBehaviour
 {
     public GameObject player;
-    public GameObject[] enemies;
 
     // Start is called before the first frame update
     void Start()
@@ -17,19 +23,6 @@ public class CommandRegistry : MonoBehaviour
         //create save state machine
         SaveStateCommand saveStateDriver = new SaveStateCommand();
         CommandManager.instance.AddCommand("SaveStateDriver", saveStateDriver);
-
-
-         foreach(GameObject g in enemies)
-        {
-            EnemyPopsIntoBackgroundCommand enemyCommand = new EnemyPopsIntoBackgroundCommand(g);
-
-             CommandManager.instance.AddCommand(g.name, enemyCommand);
-        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

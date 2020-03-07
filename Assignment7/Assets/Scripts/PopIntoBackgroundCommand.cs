@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class PopIntoBackgroundCommand : Command
 {
+    /*
+    * Warren Guiles
+    * PopIntoBackgroundCommand.cs
+    * Assignment7
+    * This command allows the reciever to "Pop into the background" by
+    changing it's color and collision layer so that it can pass through
+    ceratin obstacles.
+*/
     public GameObject receiver;
 
     public PopIntoBackgroundCommand(GameObject newReceiver)

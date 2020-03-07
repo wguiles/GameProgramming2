@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+    * Warren Guiles
+    * CommandManager.cs
+    * Assignment7
+    * This is the manager that contains a dictionary of all of the commands in the game.
+    It has functionality to execute and undo commands by accessing the dictionary 
+    via a string.
+*/
 public class CommandManager : MonoBehaviour
 {
     public static CommandManager instance;

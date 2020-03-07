@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+    * Warren Guiles
+    * MoveUpAndDown.cs
+    * Assignment7
+    * This is a script I use for basic enemy behaviour. It allows
+    the enemies in the game to move up and down.
+*/
 public class MoveUpAndDown : MonoBehaviour, ISavableObject
 {
     public float speed;

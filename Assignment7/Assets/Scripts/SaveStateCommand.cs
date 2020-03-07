@@ -3,7 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-
+/*
+    * Warren Guiles
+    * SaveStateCommand.cs
+    * Assignment7
+    * This script keeps a stack of lists of SavableObjects in order to store 
+    the position, layer, and color of every dynamic entity in the game via 
+    the execute method. When the command is undone, the stack is popped
+    to revert all movable entities to the last state they were at.
+*/
 public class SaveStateCommand : Command
 {
     public Stack<List<SavableObject>> savables = new Stack<List<SavableObject>>();

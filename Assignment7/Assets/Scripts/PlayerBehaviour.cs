@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+    * Warren Guiles
+    * PlayerBehaviour.cs
+    * Assignment7
+    * This is a script that controls the player's jump, while also
+    accessing commands for switching colors and saving 
+    and loading save states
+*/
 public class PlayerBehaviour : MonoBehaviour, ISavableObject
 {
     private Rigidbody2D rb;

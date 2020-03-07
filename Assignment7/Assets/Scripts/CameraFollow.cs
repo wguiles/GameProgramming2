@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Warren Guiles
+ * CameraFollow.cs
+ * Assignment7.
+ * This script allows the camera to follow the player as it moves. 
+ It also contains functionality for waiting a couple of seconds before
+ moving to the player.
+*/
 public class CameraFollow : MonoBehaviour, ISavableObject
 {
     public Transform target;

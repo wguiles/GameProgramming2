@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+    * Warren Guiles
+    * MoveLeftAndRight.cs
+    * Assignment7
+    * This is a script I use for basic enemy behaviour. It allows
+    the enemies in the game to move left and right.
+*/
+
 public class MoveLeftAndRight : MonoBehaviour, ISavableObject
 {
     public float speed;

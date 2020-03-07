@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class EnemyPopsIntoBackgroundCommand : Command
 {
+
+    /*[DEPRECATED]
+    * Warren Guiles
+    * EnemyPopsIntoBackgroundCommand.cs
+    * Assignment7
+    * This is a command that allowed the enemies to change color and move
+    through various obstacles. Due to time restraints, I cut it from 
+    the current project.
+*/
+
      public GameObject receiver;
 
     public EnemyPopsIntoBackgroundCommand(GameObject newReceiver)
