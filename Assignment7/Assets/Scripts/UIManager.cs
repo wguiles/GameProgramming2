@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 /*
     * Warren Guiles
-    * PlayerBehaviour.cs
+    * UIManager.cs
     * Assignment7
     * This script handles the win and lose panel for the game, while
     also displaying text for save states.
@@ -53,6 +54,11 @@ public class UIManager : MonoBehaviour
     public void ActivateWinPanel()
     {
         winPanel.SetActive(true);
+    }
+
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 
