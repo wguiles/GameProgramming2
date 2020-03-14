@@ -4,7 +4,8 @@ using UnityEngine;
 
 public abstract class AbstractEnemy : MonoBehaviour
 {
-    private Transform player;
+
+    protected Transform player;
     public float enemySpeed;
 
     public void Attack()

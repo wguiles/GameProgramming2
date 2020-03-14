@@ -2,26 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootGrunt : MonoBehaviour
+public class ShootGrunt : AbstractEnemy
 {
-    public float JumpRate;
-    public float jumpHeight;
+    public GameObject enemyBullet;
+    public float fireRate;
 
     private float currentTimer = 0f;
 
     public override void Jump()
     {
-        currentTimer += Time.deltaTime;
-
-        if (currentTimer >= JumpRate)
-        {
-            currentTimer = 0f;
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
-        }
+ 
     }
 
     public override void Shoot()
     {
-        
+        currentTimer += Time.deltaTime;
+
+        if (currentTimer >= fireRate)
+        {
+            currentTimer = 0f;
+            GameObject newBullet = Instantiate (enemyBullet, transform.position, Quaternion.identity);
+            Bullet bulletScript = newBullet.GetComponent<Bullet>();
+            bulletScript.SetDirection((int)Mathf.Sign(player.position.x - transform.position.x));
+        }
     }
 }
