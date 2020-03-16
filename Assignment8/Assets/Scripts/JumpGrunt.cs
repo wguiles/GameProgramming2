@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+	 * Warren Guiles
+	 * JumpGrunt.cs
+	 * Assignment 8
+	* This script handles one of the enemies that uses the abstract enemy template. It's
+    attack method uses the method jump to jump every few seconds.
+ */
 public class JumpGrunt : AbstractEnemy
 {
     public float JumpRate;
@@ -22,6 +29,6 @@ public class JumpGrunt : AbstractEnemy
 
     public override void Shoot()
     {
-        
+
     }
 }

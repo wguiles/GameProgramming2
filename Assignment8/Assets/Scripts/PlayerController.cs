@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+	 * Warren Guiles
+	 * PlayerController.cs
+	 * Assignment 8
+	* This script handles the player in terms of jumping and shooting
+ */
 public class PlayerController : MonoBehaviour
 {
     public float MoveSpeed;

@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+	 * Warren Guiles
+	 * ShootGrunt.cs
+	 * Assignment 8
+	* This script handles one of the enemies that uses the abstract enemy template. It's
+    attack method uses the method shoot to shoot every few seconds.
+ */
+
 public class ShootGrunt : AbstractEnemy
 {
     public GameObject enemyBullet;
