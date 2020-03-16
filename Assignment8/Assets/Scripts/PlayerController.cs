@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     public float MoveSpeed;
     public float jumpHeight;
 
+    public GameObject playerBullet;
+
     private Rigidbody2D rb;
 
     private void Start() 
@@ -32,6 +34,13 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
+        }
+
+        if (Input.GetAxisRaw("FireAxis") != 0)
+        {
+            GameObject newBullet = Instantiate(playerBullet, transform.position, Quaternion.identity);
+            Bullet newBulletScript = newBullet.GetComponent<Bullet>();
+            newBulletScript.SetDirection((int)Input.GetAxisRaw("FireAxis"));
         }
     }
 }

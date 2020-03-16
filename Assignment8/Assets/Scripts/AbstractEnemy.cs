@@ -8,6 +8,11 @@ public abstract class AbstractEnemy : MonoBehaviour
     protected Transform player;
     public float enemySpeed;
 
+    private void Start() 
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
     public void Attack()
     {
         MoveTowardsPlayer();
