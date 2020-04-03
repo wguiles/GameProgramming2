@@ -4,9 +4,9 @@ using UnityEngine;
 
 public interface EnemyState
 {
-    void StartPatrol();
 
-    void Move();
+    void Move(GameObject Enemy);
 
-    void SpawnUnderlings();
+    void Action(GameObject Enemy);
+
 }
