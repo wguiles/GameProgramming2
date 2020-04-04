@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+
+    /*
+		 * Warren Guiles
+		 * UIManager
+		 * Assignment 9
+		 * This script handles displaying win and loss panels 
+         based on the win/loss state
+	*/
 public static UIManager instance;
 
 public GameObject winPanel;
