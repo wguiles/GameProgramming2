@@ -5,8 +5,30 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+public static UIManager instance;
+
+public GameObject winPanel;
+public GameObject losePanel;
+
+    private void Awake() 
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
     public void LoadScene(string sceneToLoad)
     {
         SceneManager.LoadScene(sceneToLoad);
+    }
+
+    public void DisplayWinPanel()
+    {
+        winPanel.SetActive(true);
+    }
+
+    public void DisplayLosePanel()
+    {
+        losePanel.SetActive(true);
     }
 }
