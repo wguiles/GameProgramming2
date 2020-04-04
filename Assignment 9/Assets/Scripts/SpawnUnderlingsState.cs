@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class SpawnUnderlingsState : MonoBehaviour, EnemyState
 {
+
+     /*
+		 * Warren Guiles
+		 * PatrolState
+		 * Assignment 9
+		 * This is one of the concrete states for the state machine.
+         This specific state involves stopping and spawning more 
+         enemies called "underlings".
+	*/
+
     public GameObject underling;
 
     public float underlingSpawnRate = 10f;
     private float currentTimer = 0f;
-
-    private void Start() 
-    {
-       
-    }
 
     public void Move(GameObject enemyToMove)
     {

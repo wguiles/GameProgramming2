@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class PatrolState : MonoBehaviour, EnemyState
 {
+    /*
+		 * Warren Guiles
+		 * PatrolState
+		 * Assignment 9
+		 * This is one of the concrete states for the state machine.
+         This specific state involves bobbing up and down.
+	*/
     private float patrolSpeed = 10f;
 
     private Vector3 basePosition;

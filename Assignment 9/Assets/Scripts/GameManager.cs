@@ -2,9 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+	/*
+		 * Warren Guiles
+		 * GameManager
+		 * Assignment 9
+		 * This is a manger that keeps track of the 
+         number of enemies left in the level in order
+         to implement the win state.
+	*/
 public class GameManager : MonoBehaviour
 {
-    public GameManager instance;
+    public static GameManager instance;
 
     private void Awake() 
     {

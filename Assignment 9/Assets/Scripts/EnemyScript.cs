@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+	/*
+		 * Warren Guiles
+		 * EnemyScript
+		 * Assignment 9
+		 * This scripts is attached to the enemy in the game, and 
+         the script that has a reference to the state machine.
+         It handles that, collision, health, and death.
+	*/
+    
 public class EnemyScript : MonoBehaviour
 {
     public EnemyState currentState;
@@ -56,6 +65,7 @@ public class EnemyScript : MonoBehaviour
 
     private void Death()
     {
+        GameManager.instance.EnemyDefeated();
         Destroy(gameObject);
     }
 

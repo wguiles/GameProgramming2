@@ -25,10 +25,12 @@ public GameObject losePanel;
     public void DisplayWinPanel()
     {
         winPanel.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void DisplayLosePanel()
     {
         losePanel.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
     }
 }

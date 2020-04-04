@@ -5,6 +5,14 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
+       /*
+		 * Warren Guiles
+		 * Playermovement
+		 * Assignment 9
+		 * This script handles the player's movement. This is a 
+         modififed script from a brackey's video.
+	*/
+
     public CharacterController controller;
 
     public float speed = 12f;
@@ -53,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            Destroy(gameObject);
+            UIManager.instance.DisplayLosePanel();
         }
     }
 }

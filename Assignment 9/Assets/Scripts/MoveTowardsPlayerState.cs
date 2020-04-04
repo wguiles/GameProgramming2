@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class MoveTowardsPlayerState : MonoBehaviour, EnemyState
 {
+
+    /*
+		 * Warren Guiles
+		 * GunScript
+		 * Assignment 9
+		 * This is one of the concrete states for the state machine.
+         This specific state involves moving directly towards the player
+	*/
+
     public Transform player;
 
     public float pursuitSpeed = 20f;

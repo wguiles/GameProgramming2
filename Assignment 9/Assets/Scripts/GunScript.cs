@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class GunScript : MonoBehaviour
 {
+    	/*
+		 * Warren Guiles
+		 * GunScript
+		 * Assignment 9
+		 * This script handles firing from the gun muzzle.
+	*/
     public GameObject Bullet;
 
     public Transform Muzzle;

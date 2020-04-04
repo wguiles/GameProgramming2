@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
+
+        	/*
+		 * Warren Guiles
+		 * GunScript
+		 * Assignment 9
+		 * This script handles looking around for the player. This is a modified
+         script from a Brackey's tutorial.
+	*/
     public Transform playerBody;
    
     public float mouseSensitivity = 100f;
