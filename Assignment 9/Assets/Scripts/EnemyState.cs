@@ -4,7 +4,7 @@ using UnityEngine;
 
 	/*
 		 * Warren Guiles
-		 * EnemyScript
+		 * EnemyState
 		 * Assignment 9
 		 * This is the top level interface for the state machine. It's
          what all the concrete states inherit from. It has a method

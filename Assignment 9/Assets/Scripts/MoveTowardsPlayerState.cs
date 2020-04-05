@@ -17,12 +17,6 @@ public class MoveTowardsPlayerState : MonoBehaviour, EnemyState
 
     public float pursuitSpeed = 20f;
 
-    private void Start() 
-    {
-        
-    }
-
-
     public void Move(GameObject enemy)
     {   
         if (player == null)
