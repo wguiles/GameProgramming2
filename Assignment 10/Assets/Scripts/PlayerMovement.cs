@@ -107,11 +107,21 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.tag == "Money")
         {
             other.gameObject.SetActive(false);
+
+            if (GameManager.instance == null)
+            {
+                return;
+            }
+
             GameManager.instance.collectMoney();
             
         }
         else if(other.gameObject.tag == "Enemy")
         {
+            if (GameManager.instance == null)
+            {
+                return;
+            }
             GameManager.instance.DisplayLossPanel();
             gameObject.SetActive(false);
         }
