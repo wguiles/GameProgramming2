@@ -45,6 +45,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Week 12, 1. Singleton Pattern with Console Output\SingletonClass.cs" />
+     <Compile Include="Assets\Scripts\Week 12, 1. Singleton Pattern with Console Output\SingletonMonoBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Week 12, 1. Singleton Pattern with Console Output\StaticClass.cs" />
+     <Compile Include="Assets\Scripts\Week 12, 1. Singleton Pattern with Console Output\UsingSingletons.cs" />
+     <Compile Include="Assets\Scripts\Week 12, 2. Object Pool Pattern with GameObjects\Client Scripts\FastPrefabSpawnerWithObjPooling.cs" />
+     <Compile Include="Assets\Scripts\Week 12, 2. Object Pool Pattern with GameObjects\Client Scripts\SlowPrefabSpawner.cs" />
+     <Compile Include="Assets\Scripts\Week 12, 2. Object Pool Pattern with GameObjects\Design Pattern Scripts\ObjectPooler.cs" />
+     <Compile Include="Assets\Scripts\Week 12, 2. Object Pool Pattern with GameObjects\Design Pattern Scripts\Pool.cs" />
+     <Compile Include="Assets\Scripts\Week 12, 2. Object Pool Pattern with GameObjects\Supporting Scripts\FountainAddForce.cs" />
      <Compile Include="Assets\Scripts\Week 5, 1. Simple Factory Pattern - Console\Enemy.cs" />
      <Compile Include="Assets\Scripts\Week 5, 1. Simple Factory Pattern - Console\EnemySimulator.cs" />
      <Compile Include="Assets\Scripts\Week 5, 1. Simple Factory Pattern - Console\EnemySpawnerTheClientClass.cs" />
