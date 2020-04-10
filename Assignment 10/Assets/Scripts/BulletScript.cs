@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+	* Warren Guiles
+	 * BulletScript
+	 * Assignment 10
+	 * This is a basic script that has a method for setting it's velocity
+     and moving it based on a set speed
+ */
+
 public class BulletScript : MonoBehaviour
 {
     public float bulletSpeed;

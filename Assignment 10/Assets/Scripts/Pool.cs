@@ -4,6 +4,15 @@
 using UnityEngine;
 using System.Collections;
 
+   /*
+	* Warren Guiles
+	 * Pool.cs
+	 * Assignment 10
+	 * This is the pool class that is managed by the pooler.
+     I took this from the example code that you showed us.
+ */
+
+
 [System.Serializable]
 public class Pool
 {

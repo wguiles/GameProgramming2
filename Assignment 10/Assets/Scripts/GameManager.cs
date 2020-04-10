@@ -7,6 +7,14 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
 
+    /*
+	* Warren Guiles
+	 * GameManager
+	 * Assignment 10
+	 * This script handles win/loss state as well as ui. It has a singleton so that all scripts an access it
+ */
+
+
     //Text
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI scoreText;

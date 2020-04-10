@@ -5,6 +5,17 @@ using UnityEngine;
 
 public class ObjectPooler : MonoBehaviour
 {
+
+/*
+	* Warren Guiles
+	 * ObjectPooler
+	 * Assignment 10
+	 * This is the object pooler script that spawns objects at startup
+     and turns them off. I took this from the example code that 
+     you showed us.
+ */
+
+
     // A list of Pool objects based on the Pool class
     public List<Pool> pools;
 

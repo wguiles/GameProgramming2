@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+	* Warren Guiles
+	 * EnemySpawner
+	 * Assignment 10
+	 * This is the main client script that communicates with the object pooler script. 
+     It spawns enemies offscreen every x seconds and calls its method to give 
+     it a velocity.
+ */
+
 public class EnemySpawnwer : MonoBehaviour
 {
     public float spawnRate;

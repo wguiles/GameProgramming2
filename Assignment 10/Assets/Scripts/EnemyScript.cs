@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+	* Warren Guiles
+	 * EnemyScript
+	 * Assignment 10
+	 * This is a basic script that has a method for setting it's velocity
+     and moving it based on a set speed. It also handles collision
+     for death and spawning money.
+ */
+
 public class EnemyScript : MonoBehaviour
 {
     private Rigidbody2D rb;

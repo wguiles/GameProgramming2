@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+   /*
+	* Warren Guiles
+	 * PlayerMovement
+	 * Assignment 10
+	 * This script handles player movement, shooting, and collsiion.
+ */
+
+
 public class PlayerMovement : MonoBehaviour
 {
    public float moveSpeed;
