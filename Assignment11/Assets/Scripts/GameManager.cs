@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+ /*
+	 * Warren Guiles
+	 * GameManager.cs
+	 * Assignment 11
+	 * This is the high level facade interface. The gameManager has methods that communicate with
+     the soundManager, spawnmanager, and UImanager.
+ */
 public class GameManager : MonoBehaviour
 {
     public SoundManager soundManager;

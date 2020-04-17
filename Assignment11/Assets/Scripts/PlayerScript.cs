@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+ /*
+	 * Warren Guiles
+	 * PlayerScript.cs
+	 * Assignment 11
+	 * This script controls the player movement, shooting, and collision. It's also 
+     a client that communicates with the facade interface.
+ */
+
 public class PlayerScript : MonoBehaviour
 {
     public float playerSpeed;
@@ -9,12 +18,6 @@ public class PlayerScript : MonoBehaviour
 
     public GameManager manager;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

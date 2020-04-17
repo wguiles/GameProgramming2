@@ -5,6 +5,14 @@ using UnityEngine;
 public class BugEnemy : MonoBehaviour
 {
 
+ /*
+	 * Warren Guiles
+	 * BugEnemy.cs
+	 * Assignment 11
+	 * This is the script that handles the bug enemy that the boss spawns. it has implementations
+     for ssetting the enemy's destination and speed. It also handles collision
+ */
+
     private float speed = 0.005f;
 
     private Transform player;

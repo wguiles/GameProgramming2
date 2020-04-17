@@ -4,19 +4,16 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+
+/*
+	 * Warren Guiles
+	 * EnemySpawner.cs
+	 * Assignment 11
+	 * This is the script that spawns multiple bug enemies and sends them towards the player. 
+     It is one of the subsystems for the facade pattern.
+ */
+
     public GameObject enemy;
-
-
-    private void Start() 
-    {
-     
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void SpawnSwarm()
     {

@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+ /*
+	 * Warren Guiles
+	 * UIManager.cs
+	 * Assignment 11
+	 * This script controls ui in the game in terms of the win screen, lose screen, and 
+     boss health bar. It's also one of the subsystems used in the facade setup.
+ */
 public class UIManager : MonoBehaviour
 {
     public GameObject winScreen;

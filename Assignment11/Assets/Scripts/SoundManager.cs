@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+ /*
+	 * Warren Guiles
+	 * SoundManager.cs
+	 * Assignment 11
+	 * This script controls the sounds in the game. It's also
+     one of the subsystems used in the facade setup.
+ */
 public class SoundManager : MonoBehaviour
 {
     public AudioSource source;
