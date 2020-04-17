@@ -7,7 +7,7 @@ using UnityEngine;
 	 * AbstractEnemy.cs
 	 * Assignment 8
 	* This script is the base for the enemy template. The attack 
-    method is the method with all of the methods inside it that are overriden
+    method is the method with all of the methods inside it that are overriden.
  */
 public abstract class AbstractEnemy : MonoBehaviour
 {
